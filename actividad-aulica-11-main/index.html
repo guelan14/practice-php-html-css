@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Ejercicios</h1>
+
+    <!--
+    Introduccion
+   
+    <script>
+      document.write("Migue <br> 15Años ");
+    </script>
+
+    Variables
+    <script>
+      let empleado = "Migue";
+      let sueldo = 1100000;
+      document.write(empleado, sueldo);
+    </script>
+
+    Entrada de datos por teclado. 
+    <script>
+      let nombre;
+      let email;
+      nombre = prompt("Ingrese su nobmre");
+      edad = prompt("ingrese su edad");
+      document.write(nombre);
+      document.write(edad);
+    </script>
+    
+---------------------------------------------------------------------------------
+
+   Estructuras secuenciales de programación.
+    
+     <script>        document.write('EJERCICIO 1 <br>');
+
+      let longitud = prompt("ingrese valor del lado");
+      perimetro = parseInt(perimetro) * 4;
+      document.write(
+        "El primetro del cuadrado de ",
+        longitud,
+        "cm de lado es:",
+        perimetro
+      );
+    </script>
+
+    <script>
+      document.write("EJERCICIO 2 <br>");
+
+      let valorlado;
+      valorlado = prompt("Ingrese el lado del cuadrado en cm:");
+      let producto = parseInt(valorlado) * 4;
+      document.write("Los lados del cuadrado miden " + valorlado );
+      document.write("<br>");
+      document.write("El perimetro del cuadrado es " + producto );
+    </script>
+
+    <script>
+      document.write("EJERCICIO 3 <br>");
+      let v1;
+      let v2;
+      let v3;
+      let v4;
+      let suma1;
+      let producto1;
+      v1 = prompt("Ingrese el valor uno: ");
+      v2 = prompt("Ingrese el valor dos: ");
+      v3 = prompt("Ingrese el valor tres: ");
+      v4 = prompt("Ingrese el valor cuatro: ");
+      suma1 = parseInt(v1) + parseInt(v2) + parseInt(v3) + parseInt(v4);
+      producto1 = parseInt(v1) * parseInt(v2) * parseInt(v3) * parseInt(v4);
+      document.write(
+        "El resultado de la suma es: " +
+          suma1 +
+          "<br>" +
+          "El resultado de la multiplicación es: " +
+          producto1 +
+          "<br>"
+      );
+      document.write("<br>");
+    </script>
+
+    <script>
+      document.write("EJERCICIO 4 <br>");
+
+      let precio, cantidad;
+      precio = prompt("ingrese precio");
+      cantidad = prompt("Ingrese cantidad");
+      costoFinal = parseInt(precio) * parseInt(cantidad);
+      document.write("El comprado deera abona:" + costoFinal);
+    </script>
+
+    <script>
+      document.write("Estuctura condicionales simples <br>");
+      document.write("EJERCICIO 1 <br>");
+
+      let nota1, nota2, nota3;
+      let promedio;
+
+      nota1 = parseInt(prompt("Ingrese nota1: "));
+      nota2 = parseInt(prompt("Ingrese nota2 "));
+      nota3 = parseInt(prompt("Ingrese nota3: "));
+
+      promedio = (nota1 + nota2 + nota3) / 3;
+      if (promedio >= 7) {
+        document.write("Promocionado");
+      }
+    </script>
+
+    <script>
+      document.write("Estuctura condicionales compuestas <br>");
+      let valor1 = parseInt("Ingrese el primer valor");
+      let valor2 = parseInt("Ingrese el segundo valor");
+
+      if (valor1 > valor) {
+        let diferencia = valor1 - valor2;
+        document.write(
+          "La suma de los valores es de :" +
+            suma +
+            "y la diferencia es:" +
+            diferencia
+        );
+      } else {
+        let producto = valor1 * valor2;
+        let division = valor1 / valor2;
+        document.write(
+          "el producto de los valores es de: " +
+            producto +
+            "y la division del primero con respecto al segundo es de:" +
+            division
+        );
+      }
+    </script>
+
+---------------------------------------------------------------------------------
+
+    <script>
+      document.write("Estuctura condicionales anidadas <br>");
+      let num;
+      num = parseInt(prompt("Ingrese el numero a evaluar: "));
+      if (num > 0) {
+        document.write("El número es positivo");
+      } else if (num < 0) {
+        document.write("El número es negativo");
+      } else {
+        document.write("El número es 0");
+      }
+    </script>
+
+    ---------------------------------------------------------------------------------
+    <script>
+      document.write("Estuctura condicionales  <br>");
+      let valor1, valor2, valor3;
+      valor1 = parseInt(prompt("Ingrese el primer valor"));
+      valor2 = parseInt(prompt("Ingrese el segundo valor"));
+      valor3 = parseInt(prompt("ingrese el tercer valor"));
+
+      if (valor1 < 10 || valor2 < 10 || valor3 < 10) {
+        document.write("Alguno de los valores es menor a 10");
+      } else {
+        document.write("Ninguno de los valores es menor 10");
+      }
+    </script>
+
+---------------------------------------------------------------------------------
+
+    <script>
+      document.write("Estucturas switch <br>");
+      let palabra = prompt("Ingresa la palabra");
+      switch (palabra) {
+        case "casa":
+          document.write("house");
+          break;
+        case "mesa":
+          document.write("table");
+          break;
+        case "gato":
+          document.write("cat");
+          break;
+        default:
+          document.write("no ingreso un valor correcto");
+          break;
+      }
+    </script>
+
+---------------------------------------------------------------------------------
+
+   <script>
+      document.write("Estucturas while <br>");
+      let num = 11;
+      let cont = 1;
+      while (cont <= 25) {
+        document.write(num);
+        document.write("<br>");
+        cont = cont + 1;
+        num = num + 11;
+      }
+    </script>
+
+---------------------------------------------------------------------------------
+
+   acumulador
+   <script>
+      let x = 1;
+      let ac1 = 0;
+      let ac2 = 0;
+      let nota;
+      while (x <= 10) {
+        nota = parseInt(prompt("Ingrese valor:"));
+        if (nota >= 7) {
+          ac1 = ac1 + 1;
+        } else {
+          ac2 = ac2 + 1;
+        }
+        x = x + 1;
+      }
+      document.write(
+        "Cantidad de alumnos con notas mayores o iguales a 7:" + ac1
+      );
+      document.write("Cantidad de alumnos con notas menores a 7:" + ac2);
+    </script>
+
+---------------------------------------------------------------------------------
+
+    Estructura repetitiva (do/while)
+   <script>
+      let numero;
+      let suma = 0;
+      do {
+        valorIngresado = parseInt(
+          prompt("Ingrese un numero o 9999 para salir")
+        );
+        if (valorIngresado != 9999) {
+          suma = suma + valorIngresado;
+        }
+      } while (valor != 9999);
+      document.write("La suma total es" + suma);
+      if (suma > 0) {
+        document.write("La suma es mayor a cero");
+      } else {
+        if (suma == 0) {
+          document.write("La suma es cero");
+        } else {
+          document.write("La suma es menor a cero");
+        }
+      }
+    </script> 
+
+---------------------------------------------------------------------------------
+
+    <script>
+      Estructura repetitiva (for)
+      let triangulosMayor = 0;
+
+      for (let i = 1; i <= 3; i++) {
+        let base = parseInt(prompt(`Ingrese la base del triángulo ${i}:`));
+        let altura = parseInt(prompt(`Ingrese la altura del triángulo ${i}:`));
+
+        let superficie = (base * altura) / 2;
+
+        document.write(
+          `Triángulo ${i}: Base = ${base}, Altura = ${altura}, Superficie = ${superficie}<br>`
+        );
+
+        if (superficie > 12) {
+          triangulosMayor;
+        }
+      }
+    </script>
+
+---------------------------------------------------------------------------------
+
+   <script>
+      function mostrarRango() {
+        let menor = parseInt(prompt("Ingrese el número menor:"));
+        let mayor = parseInt(prompt("Ingrese el número mayor:"));
+
+        // Verificar que el menor sea efectivamente menor que el mayor
+        if (menor >= mayor) {
+          document.write("El primer número debe ser menor que el segundo.<br>");
+          return;
+        }
+
+        // Mostrar los números desde el menor hasta el mayor
+        for (let i = menor; i <= mayor; i++) {
+          document.write(i + "<br>");
+        }
+      }
+      // Llamar a la función
+      mostrarRango();
+
+---------------------------------------------------------------------------------
+    
+      //Funciones con parametros
+      function mostrarMenor(num1, num2, num3) {
+    let menor = Math.min(num1, num2, num3);
+    document.write("El menor de los tres números es: " + menor + "<br>");
+    }
+
+    mostrarMenor(15, 9, 27);
+    </script>
+
+---------------------------------------------------------------------------------
+
+   <script>
+      function obtenerMayor(num1, num2, num3) {
+        return Math.max(num1, num2, num3);
+      }
+
+      // Ejemplo de uso de la función
+      let mayor1 = obtenerMayor(15, 9, 27);
+      document.write("El mayor de los tres números es: " + mayor1 + "<br>");
+
+      let mayor2 = obtenerMayor(3, 8, 1);
+      document.write("El mayor de los tres números es: " + mayor2 + "<br>");
+    </script>
+
+---------------------------------------------------------------------------------
+
+   PROGRAMACION ORIENTADA A OBJETOSSSSSSSSSSSS 
+    //Class Date 
+    <script>
+      let fecha = new Date();
+      let mes = fecha.getMonth();
+      let cuatrimestre = obtenerCuatrimestre(mes);
+
+      function obtenerCuatrimestre(mes) {
+        if (mes < 4) {
+          return "primer cuatrimestre del año";
+        } else if (mes < 8) {
+          return "segundo cuatrimestre del año";
+        } else {
+          return "tercer cuatrimestre del año";
+        }
+      } 
+
+      document.write(`Nos encontramos en el ${cuatrimestre}`);
+    </script>
+
+---------------------------------------------------------------------------------    
+
+  <script>
+      function cargarVector() {
+        let vector = [];
+        let acumuladoTotal = 0;
+        let acumuladoMayor36 = 0;
+        let cantidadMayor50 = 0;
+
+        // Ingresar los 8 elementos del vector
+        for (let i = 0; i < 8; i++) {
+          let valor = parseInt(
+            prompt(`Ingrese el valor del elemento ${i + 1}:`)
+          );
+          vector.push(valor);
+
+          // Acumular el valor total
+          acumuladoTotal += valor;
+
+          // Acumular los valores mayores a 36
+          if (valor > 36) {
+            acumuladoMayor36 += valor;
+          }
+
+          // Contar los valores mayores a 50
+          if (valor > 50) {
+            cantidadMayor50++;
+          }
+        }
+
+        // Mostrar los resultados
+        document.write(
+          `El valor acumulado de todos los elementos es: ${acumuladoTotal}<br>`
+        );
+        document.write(
+          `El valor acumulado de los elementos mayores a 36 es: ${acumuladoMayor36}<br>`
+        );
+        document.write(
+          `La cantidad de valores mayores a 50 es: ${cantidadMayor50}<br>`
+        );
+      }
+
+      cargarVector();
+
+---------------------------------------------------------------------------------
+
+ 
+    <script>
+      let numero = parseInt(prompt("Ingrese un valor:"));
+      let resultado = Math.pow(numero, 3);
+      document.write("El resultado es " + resultado);
+    </script>
+
+---------------------------------------------------------------------------------
+
+   <script>
+      //Clase String
+      function contarNombres() {
+        let cnt = 0;
+        let nom;
+
+        // Bucle hasta que se ingrese "Fin"
+        do {
+          nom = prompt("Ingrese un nombre (o 'Fin' para terminar):");
+
+          if (nom !== "Fin") {
+            cnt++; // Incrementar contador
+          }
+        } while (nom !== "Fin");
+
+        document.write(`Se ingresaron ${cnt} nombres.`);
+      }
+
+      contarNombres();
+    </script>
+    
+---------------------------------------------------------------------------------
+
+    <form>
+      <input type="button" onClick="presion1()" value="Boton 1" />
+      <input type="button" onClick="presion2()" value="Boton 2" />
+      <input type="button" onClick="presion3()" value="Boton 3" />
+    </form>
+
+    <script>
+      function presion1() {
+        alert("Se presionó el botón 1");
+      }
+
+      function presion2() {
+        alert("Se presionó el botón 2");
+      }
+
+      function presion3() {
+        alert("Se presionó el botón 3");
+      }
+    </script>
+
+---------------------------------------------------------------------------------
+
+    //Controles FORM, BUTTON y TEXT
+      <script>
+        function elevarAlCubo() {
+            // Obtener el valor del campo de texto
+            let numero = parseInt(document.getElementById("numero").value);
+            
+            // Verificar si es un número válido
+            if (!isNaN(numero)) {
+                let resultado = Math.pow(numero, 3); // Elevar al cubo
+                alert(`El valor ${numero} elevado al cubo es: ${resultado}`);
+            } else {
+                alert("Por favor, ingrese un número entero válido.");
+            }
+        }
+    </script>
+<body>
+    <h1>Elevar un número al cubo</h1>
+    <form>
+        <label for="numero">Ingrese un número entero:</label>
+        <input type="text" id="numero" required>
+        <button type="button" onclick="elevarAlCubo()">Calcular Cubo</button>
+    </form>
+
+--------------------------------------------------------------------------------- 
+    
+    Control PASSWORD
+
+    <form>
+        <label for="password1">Ingrese la contraseña:</label>
+        <input type="password" id="password1" required><br><br>
+
+        <label for="password2">Confirme la contraseña:</label>
+        <input type="password" id="password2" required><br><br>
+
+        <button type="button" onclick="validarContrasenas()">Verificar Contraseñas</button>
+    </form>
+
+    <script>
+        function validarContrasenas() {
+            // Obtener los valores de los campos de texto
+            let password1 = document.getElementById("password1").value;
+            let password2 = document.getElementById("password2").value;
+
+            // Comparar las contraseñas
+            if (password1 === password2) {
+                alert("Las contraseñas son iguales.");
+            } else {
+                alert("Las contraseñas no son iguales.");
+            }
+        }
+    </script>
+  
+---------------------------------------------------------------------------------
+
+    <script>
+      function mostrarPrecio() {
+        const precios = {
+          jamon_y_queso: 700,
+          muzzarella: 800,
+          morrones: 600,
+        };
+
+        const pizzaSeleccionada = document.getElementById("pizzas").value;
+        const precioText = document.getElementById("precio");
+
+        precioText.value = pizzaSeleccionada
+          ? `$${precios[pizzaSeleccionada]}`
+          : "";
+      }
+    </script>
+    <body>
+      <h1>Seleccionar Pizza</h1>
+      <label for="pizzas">Elija una pizza:</label>
+      <select id="pizzas" onchange="mostrarPrecio()">
+        <option value="">Seleccione...</option>
+        <option value="jamon_y_queso">Jamón y Queso</option>
+        <option value="muzzarella">Muzzarella</option>
+        <option value="morrones">Morrones</option>
+      </select>
+      <br /><br />
+      <label for="precio">Precio:</label>
+      <input type="text" id="precio" readonly />
+
+---------------------------------------------------------------------------------
+    
+    <h1>Seleccionar Deportes</h1>
+    <form>
+      <label><input type="checkbox" id="futbol" /> Fútbol</label><br />
+      <label><input type="checkbox" id="basquet" /> Básket</label><br />
+      <label><input type="checkbox" id="tenis" /> Tenis</label><br />
+      <button type="button" onclick="mostrarDeportes()">
+        Mostrar Deportes
+      </button>
+    </form>
+  </body>
+  <script>
+    function mostrarDeportes() {
+      // Obtener los checkboxes
+      const futbol = document.getElementById("futbol").checked;
+      const basquet = document.getElementById("basquet").checked;
+      const tenis = document.getElementById("tenis").checked;
+
+      // Crear un mensaje con los deportes seleccionados
+      let deportesSeleccionados = "Deportes seleccionados: ";
+      if (futbol) deportesSeleccionados += "Fútbol, ";
+      if (basquet) deportesSeleccionados += "Básket, ";
+      if (tenis) deportesSeleccionados += "Tenis, ";
+
+    
+      // Mostrar el mensaje
+      alert(deportesSeleccionados);
+    } 
+
+  </script>
+  
+---------------------------------------------------------------------------------
+
+    <h1>Verificar Edad</h1>
+    <form>
+      <label>
+        <input type="radio" name="edad" value="si" /> Mayor de 18 años </label
+      ><br />
+      <label>
+        <input type="radio" name="edad" value="no" /> Menor de 18 años </label
+      ><br />
+      <button type="button" onclick="verificarEdad()">Verificar</button>
+    </form>
+    <script>
+      function verificarEdad() {
+        // Obtener el valor del radio button seleccionado
+        const mayorEdad = document.querySelector('input[name="edad"]:checked');
+
+        // Verificar si se seleccionó alguna opción
+        if (mayorEdad) {
+          if (mayorEdad.value === "si") {
+            alert("Puede ingresar al sitio.");
+          } else {
+            alert("No puede ingresar al sitio.");
+          }
+        } else {
+          alert("Por favor, seleccione si es mayor de 18 años.");
+        }
+      }
+    </script>
+
+---------------------------------------------------------------------------------
+
+  Control Text Area
+   <script>
+      function mostrarDatos() {
+        // Obtener los valores ingresados por el usuario
+        const nombre = document.getElementById("nombre").value;
+        const email = document.getElementById("email").value;
+        const comentarios = document.getElementById("comentarios").value;
+
+        // Mostrar los datos en una alerta
+        alert(
+          `Nombre: ${nombre}\nEmail: ${email}\nComentarios: ${comentarios}`
+        );
+      }
+    </script>
+  <body>
+    <h1>Página de Visitas</h1>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required /><br /><br />
+
+      <label for="comentarios">Comentarios:</label><br />
+      <textarea id="comentarios" rows="4" cols="50" required></textarea
+      ><br /><br />
+
+      <button type="button" onclick="mostrarDatos()">Enviar</button>
+    </form>
+  </body>
+
+  ---------------------------------------------------------------------------------
+
+  Eventos onFocus y onBlur
+  <script>
+      function validarClave() {
+        // Obtener el valor del campo de clave
+        const clave = document.getElementById("clave").value;
+
+        // Verificar si la clave tiene menos de 7 caracteres o más de 20
+        if (clave.length < 7 || clave.length > 20) {
+          alert("La clave debe tener entre 7 y 20 caracteres.");
+        }
+      }
+    </script>
+  <body>
+    <h1>Ingreso de Usuario</h1>
+    <form>
+      <label for="nombre">Nombre de usuario:</label>
+      <input type="text" id="nombre" required /><br /><br />
+
+      <label for="clave">Clave:</label>
+      <input
+        type="password"
+        id="clave"
+        onblur="validarClave()"
+        required
+      /><br /><br />
+
+      <button type="submit">Ingresar</button>
+    </form>
+
+---------------------------------------------------------------------------------
+
+    Onmouse 
+    <script>
+`        function pintar(celda, color) {
+            celda.style.backgroundColor = color;
+        }
+    </script>
+<body>
+    <h1>Selecciona tu Webmail</h1>
+    <table>
+        <tr>
+            <td onMouseOver="pintar(this, '#ffaaaa')" onMouseOut="pintar(this, '#ffffff')">
+                <a href="https://www.outlook.com" target="_blank">Outlook</a>
+            </td>
+            <td onMouseOver="pintar(this, '#aaffaa')" onMouseOut="pintar(this, '#ffffff')">
+                <a href="https://www.yahoo.com" target="_blank">Yahoo</a>
+            </td>
+            <td onMouseOver="pintar(this, '#aaaaff')" onMouseOut="pintar(this, '#ffffff')">
+                <a href="https://www.gmail.com" target="_blank">GMail</a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+---------------------------------------------------------------------------------
+
+Evento onLoad
+<body onLoad="mostrarMensaje()">
+
+    <h1>Bienvenidos</h1>
+
+    <script>
+        function mostrarMensaje() {
+            alert('La página ha sido cargada correctamente');
+        }
+    </script>
+
+</body>
+
+---------------------------------------------------------------------------------
+
+	El objeto window
+   <form>
+        <input type="button" value="Abrir ventana" onClick="abrirVentana()">
+    </form>
+
+    <script>
+        function abrirVentana() {
+            let ventana = window.open('', '', 'width=600,height=300');
+            ventana.document.write('<h1>Esta es una ventana nueva</h1><p>AAAAA</p>');
+        }
+    </script>
+
+---------------------------------------------------------------------------------
+    
+    Propiedad location:
+        <button onClick="redirigirCorreo()">Ir a un servicio de correo</button>
+
+    <script>
+        function redirigirCorreo() {
+            // Crear un array con las URLs de los servicios de correo
+            const serviciosCorreo = [
+                'https://www.outlook.com',
+                'https://www.yahoo.com',
+                'https://www.gmail.com'
+            ];
+            
+            // Obtener un índice aleatorio para seleccionar una URL
+            const indiceAleatorio = Math.floor(Math.random() * serviciosCorreo.length);
+            
+            // Redirigir a la URL seleccionada
+            window.location.href = serviciosCorreo[indiceAleatorio];
+        }
+    </script>
+
+---------------------------------------------------------------------------------    
+
+    Propiedad history del objeto window
+      <button onClick="abrirVentana()">Abrir Ventana Completa</button>
+
+    <script>
+        function abrirVentana() {
+            let ancho = window.screen.width; 
+            let alto = window.screen.height / 2; 
+
+            // Abrir una nueva ventana con el tamaño especificado
+            window.open('', '', `width=${ancho},height=${alto}`);
+        }
+    </script>
+
+---------------------------------------------------------------------------------
+    
+    Archivo JavaScript externo (*.js)
+    Programación orientada a objetos en JavaScri
+    <script>
+        class Suma {
+            constructor() {
+                this.valor1 = 0; 
+                this.valor2 = 0; 
+            }
+
+            cargarValor1(valor) {
+                this.valor1 = valor;
+            }
+
+            cargarValor2(valor) {
+                this.valor2 = valor;
+            }
+
+            retornarResultado() {
+                return this.valor1 + this.valor2;
+            }
+        }
+
+        let s = new Suma();
+        s.cargarValor1(10); 
+        s.cargarValor2(20); 
+
+        document.write('La suma de los dos valores es: ' + s.retornarResultado());
+    </script>
+
+---------------------------------------------------------------------------------
+
+    Definición de varias clases.
+    <script>
+        // Clase Persona
+        class Persona {
+            constructor(nombre, edad) {
+                this.nombre = nombre; 
+                this.edad = edad; 
+            }
+        }
+
+        // Clase Empresa
+        class Empresa {
+            constructor(edadTope) {
+                this.edadTope = edadTope; 
+            }
+
+            contarInhabilitados(personas) {
+                let inhabilitados = 0; 
+                for (let persona of personas) {
+                    if (persona.edad > this.edadTope) {
+                        inhabilitados++;
+                    }
+                }
+                return inhabilitados; 
+            }
+        }
+
+        let persona1 = new Persona("Juan", 45);
+        let persona2 = new Persona("María", 62);
+        let persona3 = new Persona("Pedro", 55);
+
+        let empresa = new Empresa(60);
+        let personas = [persona1, persona2, persona3];
+        let inhabilitados = empresa.contarInhabilitados(personas);
+
+        document.write('Cantidad de personas inhabilitadas para trabajar: ' + inhabilitados);
+    </script>
+
+---------------------------------------------------------------------------------
+
+Vectores con componentes de tipo objeto.
+<script>
+        // Clase Persona
+        class Persona {
+            constructor(nombre, edad) {
+                this.nombre = nombre; 
+                this.edad = edad;     
+            }
+        }
+
+        // Definir un vector de 4 componentes de tipo Persona
+        let personas = [
+            new Persona("Juan", 25),
+            new Persona("Ana", 30),
+            new Persona("Luis", 30),
+            new Persona("María", 28)
+        ];
+
+        // Variables para encontrar la persona de mayor edad
+        let maxEdad = 0;
+        let nombresConMaxEdad = [];
+
+        // Determinar la edad máxima y los nombres de las personas con esa edad
+        for (let persona of personas) {
+            if (persona.edad > maxEdad) {
+                maxEdad = persona.edad;
+                nombresConMaxEdad = [persona.nombre]; 
+            } else if (persona.edad === maxEdad) {
+                nombresConMaxEdad.push(persona.nombre); 
+            }
+        }
+
+        // Imprimir el resultado
+        document.write("La persona de mayor edad tiene " + maxEdad + " años.<br>");
+        document.write("Nombres: " + nombresConMaxEdad.join(", ") + "<br>");
+
+        if (nombresConMaxEdad.length > 1) {
+            document.write("Hay más de una persona con la edad mayor.");
+        } else {
+            document.write("Hay una única persona con la edad mayor.");
+        }
+    </script>
+
+---------------------------------------------------------------------------------    
+
+    Creación de objetos literales
+     <script>
+        // Array de días de la semana utilizando la notación de array literal
+        const diasSemana = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"];
+
+        // Array de meses utilizando el constructor Array
+        const meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+
+        // Mostrar los días de la semana
+        document.write("<h2>Días de la Semana:</h2>");
+        for (let dia of diasSemana) {
+            document.write(dia + "<br>");
+        }
+
+        // Mostrar los nombres de los meses
+        document.write("<h2>Meses del Año:</h2>");
+        for (let mes of meses) {
+            document.write(mes + "<br>");
+        }
+    </script>
+
+---------------------------------------------------------------------------------
+
+    Arrray densos
+    <script>
+        // Crear un vector con 10 valores aleatorios entre 1 y 500
+        let vectorOriginal = []; // Inicializar el vector vacío
+        for (let i = 0; i < 10; i++) {
+            vectorOriginal[i] = Math.floor(Math.random() * 500) + 1;
+        }
+
+        let vectorMenores = [];
+        let vectorMayores = [];
+
+        for (let i = 0; i < vectorOriginal.length; i++) {
+            if (vectorOriginal[i] < 250) {
+                vectorMenores.push(vectorOriginal[i]);
+            } else {
+                vectorMayores.push(vectorOriginal[i]);
+            }
+        }
+
+        document.write(`Tamaño del vector de elementos menores a 250: ${vectorMenores.length}<br>`);
+        document.write(`Tamaño del vector de elementos mayores o iguales a 250: ${vectorMayores.length}<br><br>`);
+
+        document.write(`Vector Original: [${vectorOriginal.join(', ')}]<br>`);
+        document.write(`Elementos menores a 250: [${vectorMenores.join(', ')}]<br>`);
+        document.write(`Elementos mayores o iguales a 250: [${vectorMayores.join(', ')}]<br>`);
+    </script>
+
+---------------------------------------------------------------------------------
+
+    Array: no densos o dispersos 
+    script>
+        // Definir la cantidad de números en la rifa y los premios
+        const totalNumeros = 1000;
+        const premios = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]; // 10 premios
+        let vectorPremios = new Array(totalNumeros).fill(null); // Inicializar el vector con valores nulos
+
+        // Generar números aleatorios para las posiciones de los premios
+        for (let i = 0; i < premios.length; i++) {
+            let posicion;
+            do {
+                posicion = Math.floor(Math.random() * totalNumeros); // Generar una posición aleatoria
+            } while (vectorPremios[posicion] !== null); // Asegurarse de que la posición no esté ocupada
+            vectorPremios[posicion] = premios[i]; // Asignar el premio a la posición
+        }
+
+        // Imprimir los números con premio y los montos
+        document.write("Números con premio y montos:<br>");
+        for (let i = 0; i < vectorPremios.length; i++) {
+            if (vectorPremios[i] !== null) { // Solo imprimir posiciones con premios
+                document.write(`Número: ${i}, Premio: $${vectorPremios[i]}<br>`);
+            }
+        }
+    </script>
+
+---------------------------------------------------------------------------------
+
+    Array: métodos push y pop   
+    <script>
+        // Crear un vector con 5 valores aleatorios comprendidos entre 1 y 1000
+        let vector = [];
+        for (let i = 0; i < 5; i++) {
+            vector.push(Math.floor(Math.random() * 1000) + 1);
+        }
+
+        // Mostrar el vector original
+        document.write("Vector original: " + vector.join(", ") + "<br>");
+
+        // Extraer los dos últimos elementos
+        let ultimo = vector.pop();
+        let penultimo = vector.pop();
+
+        // Sumar los dos últimos elementos
+        let suma = ultimo + penultimo;
+
+        // Mostrar la suma
+        document.write("Suma de los dos últimos elementos: " + suma + "<br>");
+
+        // Mostrar el tamaño final del vector
+        document.write("Tamaño final del vector: " + vector.length + "<br>");
+    </script>
+
+---------------------------------------------------------------------------------
+
+    Metodo Sort y reverse
+    <script>
+        function cargarSueldos() {
+            let sueldos = [];
+            let sueldo;
+
+            // Ciclo para cargar sueldos hasta que se ingrese 0
+            do {
+                sueldo = parseFloat(prompt("Ingrese el sueldo del empleado (Ingrese 0 para finalizar):"));
+                
+                if (sueldo !== 0) {
+                    sueldos.push(sueldo);
+                }
+            } while (sueldo !== 0);
+
+            // Ordenar los sueldos de menor a mayor
+            sueldos.sort((a, b) => a - b);
+
+            // Invertir el orden de los sueldos para que estén de mayor a menor
+            sueldos.reverse();
+
+            // Mostrar los sueldos ordenados
+            document.write("<h2>Sueldos ordenados de mayor a menor:</h2>");
+            for (let i = 0; i < sueldos.length; i++) {
+                document.write("Empleado " + (i + 1) + ": $" + sueldos[i] + "<br>");
+            }
+        }
+
+        cargarSueldos();
+    </script>
+
+---------------------------------------------------------------------------------    
+
+     <script>
+        // Crear un vector con una lista de valores
+        let vector = [3, 2, 5, 2, 7, 9, 2, 8];
+        document.write("Vector original: " + vector + "<br>");
+
+        // Recorrer el vector buscando el número 2
+        for (let i = 0; i < vector.length; i++) {
+            if (vector[i] === 2) {
+                // Eliminar el 2 en la posición actual
+                vector.splice(i, 1);
+                // Insertar dos elementos con valor 1 en la misma posición
+                vector.splice(i, 0, 1, 1);
+                // Avanzar el índice para evitar insertar infinitamente en la misma posición
+                i++;
+            }
+        }
+
+        // Mostrar el vector modificado
+        document.write("Vector modificado: " + vector);
+    </script>
+
+---------------------------------------------------------------------------------    
+
+    Array: método join
+<script>
+        // Crear un vector con los datos de 5 personas
+        let personas = [
+            "Juan Pérez, 28 años",
+            "María López, 34 años",
+            "Carlos Gómez, 22 años",
+            "Ana Martínez, 45 años",
+            "Luis Fernández, 30 años"
+        ];
+
+        // Utilizar el método join para crear un string separado por <br>
+        let resultado = personas.join('<br>');
+
+        // Imprimir el resultado en el cuerpo del documento
+        document.write(resultado);
+    </script>
+    
+---------------------------------------------------------------------------------
+
+    Funciones: objeto arguments
+    <script>
+    function obtenerMayorValor(...numeros) {
+    if (numeros.length === 0) {
+        return null; // Retornar null si no se pasan números
+    }
+    let mayor = numeros[0]; // Inicializar con el primer número
+
+    for (let i = 1; i < numeros.length; i++) {
+        if (numeros[i] > mayor) {
+            mayor = numeros[i]; // Actualizar mayor si se encuentra un número mayor
+        }
+    }
+
+    return mayor; // Retornar el mayor valor encontrado
+}
+    
+let resultado = obtenerMayorValor(10, 25, 5, 100, 75);
+console.log('El mayor es:', resultado); 
+
+    </script>
+
+---------------------------------------------------------------------------------
+
+    Funciones Anidadas:
+    <script>
+    function funcionPrincipal(parametroExterno) {
+    // Variable local de la función principal
+    let variableLocal = "Variable local de la función principal";
+
+    // Definición de la función anidada
+    function funcionAnidada(parametroInterno) {
+        console.log("Parámetro de la función principal:", parametroExterno);
+        console.log("Parámetro de la función anidada:", parametroInterno);
+        console.log("Valor de la variable local de la función principal:", variableLocal);
+    }
+
+    // Llamar a la función anidada
+    funcionAnidada("Parámetro interno de la función anidada");
+}
+
+funcionPrincipal("Parámetro externo de la función principal");
+  </script>
+
+  Funciones setInterval, clearInterval, setTimeout y clearTimeout
+   <script>
+        // Función para redireccionar
+        function redireccionar() {
+            window.location.href = "https://www.ejemplo.com"; }
+
+        setTimeout(redireccionar, 10000); // 10000 milisegundos = 10 segundos
+    </script>
+
+---------------------------------------------------------------------------------
+
+    <script>
+        let sueldo = parseFloat(prompt("Ingrese sueldo"));
+        sueldo > 10000 ? sueldo = sueldo * 0.90 : sueldo = sueldo * 0.95;
+        alert('El total es de: ' + sueldo);
+    </script>
+
+
+---------------------------------------------------------------------------------
+
+    Expresiones regulares: cuantificadores o repeticiones {x} {x,y} {x,}
+     <script>
+        let valor = prompt('Ingrese un nro con el formato (999.99):');
+        let patron = /^[0-9]{3}\.[0-9]{2}$/;
+        if (patron.test(valor))
+            document.write('El valor es correcto');
+        else
+            document.write('El valor no tiene el formato correcto');
+    </script>
+  --></body>
+</html>

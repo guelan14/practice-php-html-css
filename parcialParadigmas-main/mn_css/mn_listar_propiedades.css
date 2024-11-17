@@ -1,0 +1,36 @@
+.property-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacia los elementos en filas */
+  margin: 20px 0; /* Espaciado superior e inferior */
+}
+
+.property-item {
+  background-color: #f9f9f9; /* Fondo claro para cada propiedad */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 15px; /* Espaciado interno */
+  margin-bottom: 20px; /* Espaciado inferior entre propiedades */
+  width: calc(30% - 20px); /* Ancho de cada propiedad, ajustando por margen */
+  transition: transform 0.2s; /* Efecto al pasar el ratón */
+}
+
+.property-item:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+}
+
+.property-description {
+  font-size: 0.95em; /* Tamaño de fuente un poco más pequeño */
+  color: #555; /* Color gris para la descripción */
+}
+
+.property-price {
+  font-weight: bold; /* Resaltar el precio */
+  color: #2c3e50; /* Color para el precio */
+}
+
+.property-location {
+  font-style: italic; /* Estilo en cursiva para la ubicación */
+  color: #7f8c8d; /* Color gris más claro */
+}

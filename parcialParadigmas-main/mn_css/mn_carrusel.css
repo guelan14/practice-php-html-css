@@ -1,0 +1,32 @@
+.destacadas {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.rotador {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden; /* Oculta el contenido que sale de la caja */
+}
+
+.rotador-item {
+  display: none; /* Oculta todos los items inicialmente */
+}
+
+.rotador-item.active {
+  display: block; /* Muestra el item activo */
+}
+
+button {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: #e94560;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Cambia el color al pasar el mouse */
+}
